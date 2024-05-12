@@ -42,7 +42,7 @@ jobs:
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: [replace-with-your-account-id]
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: digital-garden
           directory: dist
           # Optional: Switch what branch you are publishing to.
